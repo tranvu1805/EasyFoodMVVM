@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/bottomSheet"
+    tools:context=".fragments.bottomSheet.BottomSheetFragment">
+
+    <ImageView
+        android:id="@+id/imgMeal"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/accent" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:layout_toEndOf="@id/imgMeal"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:drawableStartCompat="@drawable/ic_location" />
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/_14sdp"
+        app:drawableStartCompat="@drawable/ic_category" />
+    <TextView
+        android:id="@+id/tvMealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Name"
+        android:layout_below="@id/tvCountry"
+        android:layout_toEndOf="@id/imgMeal"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read more: ..."
+        android:layout_below="@id/tvMealName"
+        android:layout_toEndOf="@id/imgMeal"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_10sdp" />
+</RelativeLayout>
